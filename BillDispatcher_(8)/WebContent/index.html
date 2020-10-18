@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Billing</title>
+<style type="text/css">
+
+	input,label,select
+	{
+		font-size: 20px;
+	}
+	
+	form 
+	{
+		background-color: lime;
+		padding: 20px;
+		color: black;
+	}
+
+</style>
+</head>
+<body>
+ <form action="firstlink" method="post">
+ <h1>ENTER THE METER READING</h1>
+ 
+ <label>ENTER CURRENT READING</label>
+ <input type="number" name="current" placeholder="current reading"/><br><br>
+ 
+ <label>ENTER PREVIOUS READING</label>
+ <input type="number" name="previous" placeholder="previous reading"/><br><br>
+ 
+ <label>SELECT THE CUSTOMER TYPE</label>
+ <select  name="customertype">
+    <option value="residential" >RESIDENTIAL</option>
+    <option value="commercial" selected>COMMERCIAL</option>
+ </select><br><br>
+ 
+ <input type="submit" value="GET BILL">
+ </form>
+
+</body>
+</html>
